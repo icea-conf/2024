@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: mapbox
 title: ACM ICEA 2024
 ---
 
@@ -7,7 +7,17 @@ title: ACM ICEA 2024
   <div class="content">
     <div>
       <h2 style="color: #0000ff">Conference Venue</h2>
-      <p style="text-align: justify">To be announced.</p>
+      <!-- <p style="text-align: justify">To be announced.</p> -->
+      <div id="map"></div>
     </div>
   </div>
 </div>
+<script>
+  mapboxgl.accessToken =
+    "sk.eyJ1IjoibWVoMzAxIiwiYSI6ImNtMjkzenZkNTAwMWoyanM3eWR4d3NpcmQifQ.guvniFKM-b5iFi-znaoRug";
+  const map = new mapboxgl.Map({
+    container: "map", // container ID
+    // center: [-74.5, 40], // starting position [lng, lat]. Note that lat must be set between -90 and 90
+    // zoom: 9, // starting zoom
+  });
+</script>
