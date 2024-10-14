@@ -3,6 +3,7 @@ layout: mapbox
 title: ACM ICEA 2024
 ---
 
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
 <div class="container">
   <div class="content">
     <div>
@@ -18,7 +19,7 @@ title: ACM ICEA 2024
   const map = new mapboxgl.Map({
     container: "map", // container ID
     style: "mapbox://styles/meh301/cm294lgcg00lz01om1o8be1dt",
-    center: [35.674, 139.695], // starting position [lng, lat]. Note that lat must be set between -90 and 90
-    zoom: 15, // starting zoom
+    center: [139.695, 35.674],
+    zoom: 15,
   });
 </script>
